@@ -1,0 +1,2 @@
+configuration_name,data_name,data_type,cell_expr_thres1,cell_expr_thres2,cell_type_exclusion
+config2,Prepared_sc_Data,h5seurat,50;10,40;20,"Platelet,Plasmablast,pDC,Eryth,Doublet,dnT,cdC1,CD8 TCM,CD8 Proliferating,CD4 Proliferating,NK Proliferating,ASDC,NK_CD56bright,ILC,MAIT,HSPC"

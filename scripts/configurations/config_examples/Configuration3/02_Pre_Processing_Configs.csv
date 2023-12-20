@@ -1,0 +1,6 @@
+"﻿configuration_name",data_name,file_type,data_type,remove_sample_ids,sample_filtering_thres,feature_filtering_thres,library_adjustment,log_transformation,variable_genes_filtering,quantile_normalization_samples,ribosomal_mitochondrial_gene_filtering,feature_wise_quantile_normalization
+config3,Prepared_Proteomic_Data,csv,proteomic,,1,0,FALSE,FALSE,1,FALSE,FALSE,FALSE
+config3,Prepared_Cytokine_Data,csv,cytokine,,1,0,FALSE,FALSE,1,FALSE,FALSE,FALSE
+config3,Prepared_Clinical_Data,csv,clinical,,1,0,FALSE,FALSE,1,FALSE,FALSE,FALSE
+config3,Prepared_sc_Data,h5seurat,sc,,1,0,FALSE,FALSE,1,FALSE,FALSE,FALSE
+config3,Prepared_Neutrophil_Data,csv,neutrophil,,1,0,FALSE,FALSE,1,FALSE,FALSE,FALSE
