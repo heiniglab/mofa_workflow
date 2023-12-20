@@ -1,8 +1,8 @@
 ### Get path where libraries have been installed
 
 ## from configuraiton file
-global_configs = read.csv('../Global_Configs.csv', sep = ',')
-path_to_conda_env = global_configs$value[global_configs$parameter == 'conda_env_path']
+env_configs = read.csv('../conda_environment/Environment_Configs.csv', sep = ',')
+path_to_conda_env = env_configs$value[env_configs$parameter == 'conda_env_path']
 path_to_conda_env = paste0(path_to_conda_env, '/lib/R/library')
 print(path_to_conda_env)
 

@@ -1,4 +1,2 @@
 parameter,value
-data_path,../results/data/input_data/
-result_path,../results/data/results/
 conda_env_path,/home/icb/corinna.losert/miniconda3/envs/jove_r/
