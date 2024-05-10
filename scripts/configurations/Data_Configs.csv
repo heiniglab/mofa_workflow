@@ -1,3 +1,3 @@
 parameter,value
-data_path,/lustre/groups/epigenereg01/workspace/projects/jove/input_data/
-result_path,/lustre/groups/epigenereg01/workspace/projects/jove/results/
+data_path,/lustre/groups/epigenereg01/workspace/projects/jove/example_data/
+result_path,/lustre/groups/epigenereg01/workspace/projects/jove/example_results/

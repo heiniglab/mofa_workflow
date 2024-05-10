@@ -140,7 +140,7 @@ colors_list[['classification']] =   scale_color_manual(values = c( "#06C4A4", "#
 ))
 colors_list[['tp_outcome']] =   scale_color_manual(values = c( "#40BE94", "#CC79A7", "#389AC8",  "#B55DCD",  "#5272B6",  "#A95FC8", "#2134AD", "#6F21AD"
 ))
-colors_list[['default']] =   scale_color_manual(values = c( "#efbc82", "#a5c88e","#e69998", "#c0b0d2","#07580A","#9F8918", "#128890", "#59b4c6", "#D55E00", "A516E8", "#DC9F1D"
+colors_list[['default']] =   scale_color_manual(values = c( "#efbc82", "#a5c88e","#e69998", "#c0b0d2","#07580A","#9F8918", "#128890", "#59b4c6", "#D55E00", "#ACD632", "#DC9F1D", "#9332D6"
 ))
 
 
@@ -155,7 +155,7 @@ fill_list[['classification']] =   scale_fill_manual(values = c( "#06C4A4", "#10D
 ))
 fill_list[['tp_outcome']] =   scale_fill_manual(values = c( "#40BE94", "#CC79A7", "#389AC8",  "#B55DCD",  "#5272B6",  "#A95FC8", "#2134AD", "#6F21AD"
 ))
-fill_list[['default']] =   scale_fill_manual(values = c( "#efbc82", "#EC82E4","#e69998", "#c0b0d2","#07580A","#9F8918", "#128890", "#59b4c6", "#D55E00", "A516E8", "#DC9F1D"
+fill_list[['default']] =   scale_fill_manual(values = c( "#efbc82", "#EC82E4","#e69998", "#c0b0d2","#07580A","#9F8918", "#128890", "#59b4c6", "#D55E00", "#ACD632", "#DC9F1D", "#9332D6"
 ))
 
 

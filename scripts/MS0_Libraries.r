@@ -38,3 +38,4 @@ library(DESeq2, lib.loc = path_to_conda_env)
 library(muscat, lib.loc = path_to_conda_env)
 
 
+library(ggokabeito, lib.loc = path_to_conda_env)

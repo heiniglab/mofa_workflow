@@ -1,2 +1,2 @@
 "﻿configuration_name",mofa_result_name,amount_of_factors,weighting_of_views,scale_views
-MI_v1,MI_v1_MOFA,20,FALSE,TRUE
+MI_v1,MI_v1_MOFA,10,FALSE,TRUE
