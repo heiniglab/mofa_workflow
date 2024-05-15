@@ -1,2 +1,2 @@
 "﻿configuration_name",mofa_result_name,factor,top_variable_thres,faceting_variable,type,plot_width,plot_height
-MI_v1,MI_v1_MOFA,Factor2,0.005,disease,,8.07,5
+MI_v1,MI_v1_MOFA,Factor2,0.005,measurement,CD4.TCM,8.07,5

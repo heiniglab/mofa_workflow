@@ -1,2 +1,2 @@
 "﻿configuration_name",mofa_result_name,relevant_factors,numeric_covariates,categorical_covariates,"top_variable_thres "
-MI_v1,MI_v1_MOFA,"Factor1,Factor2,Factor3,Factor4,Factor5,Factor6",,"disease,sex,Primary.Genetic.Diagnosis",0.005
+MI_v1,MI_v1_MOFA,"Factor1,Factor2,Factor3,Factor4,Factor5,Factor6","CK,CRP","measurement,classification,tp_outcome",0.005
