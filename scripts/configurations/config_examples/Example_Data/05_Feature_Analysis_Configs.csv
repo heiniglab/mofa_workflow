@@ -1,0 +1,2 @@
+configuration_name,mofa_result_name,factor,top_variable_thres,faceting_variable,type,plot_width,plot_height
+example_config,example_config,Factor1,0.005,genetic_diagnosis,,8.07,5

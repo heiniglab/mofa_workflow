@@ -1,0 +1,2 @@
+configuration_name,data_name,data_type,cell_expr_thres1,cell_expr_thres2,cell_type_exclusion
+example_config,Prepared_Example_Data,h5seurat,30;5,20;10,

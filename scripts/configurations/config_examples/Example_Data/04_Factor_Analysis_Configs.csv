@@ -1,0 +1,2 @@
+configuration_name,mofa_result_name,relevant_factors,numeric_covariates,categorical_covariates,"top_variable_thres "
+example_config,example_config,"Factor1,Factor2,Factor3",,"disease,genetic_diagnosis,sex",0.005
