@@ -1,15 +1,13 @@
 ### Get path where libraries have been installed
 
-## from configuraiton file
-env_configs = read.csv('../conda_environment/Environment_Configs.csv', sep = ',')
-path_to_conda_env = env_configs$value[env_configs$parameter == 'conda_env_path']
+path_to_conda_env = '/opt/conda/envs/mofa_analysis'
 path_to_conda_env = paste0(path_to_conda_env, '/lib/R/library')
 print(path_to_conda_env)
 
 ### Libraries for all the project scripts
 library(Seurat, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)
 library(SeuratData, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)
-library(SeuratDisk, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)  # conversion hd5f to seurat file
+#library(SeuratDisk, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)  # conversion hd5f to seurat file
 
 
 library(data.table, lib.loc = path_to_conda_env)
@@ -35,7 +33,7 @@ reticulate::py_config()
 
 
 library(DESeq2, lib.loc = path_to_conda_env)
-library(muscat, lib.loc = path_to_conda_env)
+#library(muscat, lib.loc = path_to_conda_env)
 
 
 library(ggokabeito, lib.loc = path_to_conda_env)
