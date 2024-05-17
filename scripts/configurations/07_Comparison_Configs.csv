@@ -1,5 +1,2 @@
-mofa_result_name,compare_factors
-MI_v1_MOFA,"Factor1,Factor2,Factor3,Factor4,Factor5"
-MI_v1_MOFA_10,"Factor1,Factor2,Factor3,Factor4,Factor5"
-MI_v1_MOFA_15,"Factor1,Factor2,Factor3,Factor4,Factor5"
-MI_v1_MOFA_25,"Factor1,Factor2,Factor3,Factor4,Factor5"
+"mofa_result_name","compare_factors"
+"MI_v1_MOFA","Factor1,Factor2,Factor3"
