@@ -1,2 +1,2 @@
 configuration_name,data_name,file_type,data_type,remove_sample_ids,sample_filtering_thres,feature_filtering_thres,library_adjustment,log_transformation,variable_genes_filtering,quantile_normalization_samples,ribosomal_mitochondrial_gene_filtering,feature_wise_quantile_normalization
-example_config,Prepared_Example_Data,h5seurat,sc,,1,0,TRUE,TRUE,1,TRUE,TRUE,TRUE
+example_data,Prepared_Example_Data,h5seurat,sc,,1,0,TRUE,TRUE,1,TRUE,TRUE,TRUE

@@ -1,3 +1,4 @@
 parameter,value
-data_path,/mnt/c/Users/CorinnaLosert/Documents/Container_Tests/example_data/
-result_path,/mnt/c/Users/CorinnaLosert/Documents/Container_Tests/example_results/
+data_path,/mnt/c/Users/CorinnaLosert/Documents/Example_Tutorial/input_data/
+result_path,/mnt/c/Users/CorinnaLosert/Documents/Example_Tutorial/results/
+configuration_name,example_data

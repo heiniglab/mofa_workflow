@@ -1,2 +1,2 @@
-configuration_name,mofa_result_name,amount_of_factors,weighting_of_views,scale_views
-example_config,example_config,10,FALSE,TRUE
+"configuration_name","mofa_result_name","amount_of_factors","weighting_of_views","scale_views"
+"example_data","example_data_MOFA",10,FALSE,TRUE

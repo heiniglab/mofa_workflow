@@ -1,2 +1,3 @@
 mofa_result_name,factor_set,coverage_par,types,coverage_plot,p_value_plot,max_pathways_plot,enrichment_plot,top_features_plot,pathway_selection
-example_config,"1,2,3,4,5",0.2,"endothelial.cell,fibroblast.of.cardiac.tissue,mural.cell,myeloid.cell,cardiac.muscle.cell,adipocyte,cardiac.neuron,lymphocyte,mast.cell",0.5,0.05,8,negative,0.125,
+example_data_MOFA,1,0.2,"adipocyte,cardiac.muscle.cell,cardiac.neuron,endothelial.cell,fibroblast.of.cardiac.tissue,lymphocyte,mast.cell,mural.cell,myeloid.cell",0.5,0.05,8,negative,0.125,
+,,,,,,,,,
