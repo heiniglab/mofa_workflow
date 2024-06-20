@@ -142,3 +142,117 @@ run_enrichment_pathway =function(model, # MOFA Model
     enrichment_result_p_val$global_FDR = p.adjust(enrichment_result_p_val$p, "BH")
     return(enrichment_result_p_val)
 }
+
+
+# Define the JavaScript for the popup
+popup_alert = function(popup_text){
+    javascript_code <- paste0('
+    alert("', popup_text, '");
+    ')
+
+    # Display the JavaScript to trigger the alert
+    IRdisplay::display_javascript(data = javascript_code)
+    }
+
+
+
+
+popup_function_neg = function(popup_text){
+    # Define the HTML, CSS, and JavaScript for the popup
+     # Escape single quotes in color_code
+    html_code = paste0('
+    <style>
+    .popup {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #DC7A78;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+      z-index: 9999; /* Ensure it\'s on top of other content */
+      width: 300px; /* Set width of the popup */
+    }
+
+    .popup.show {
+      display: block; /* Show when .show class is added */
+    }
+    </style>
+
+    <div id="popup" class="popup">', popup_text, '</div>
+
+    <script>
+    // Function to show the popup
+    function showPopup() {
+      var popup = document.getElementById("popup");
+      popup.classList.add("show");
+
+      // Automatically hide the popup after 5 seconds (5000 milliseconds)
+      setTimeout(function(){
+        popup.classList.remove("show");
+      }, 5000); // Adjust the time interval as needed
+    }
+
+    // Call the function to show the popup immediately
+    showPopup();
+    </script>
+    ')
+
+    # Display the HTML in the notebook
+    IRdisplay::display_html(html_code)
+    }
+
+
+popup_function_pos <- function(popup_text) {
+    # Define the HTML, CSS, and JavaScript for the popup
+    html_code <- paste0('
+    <style>
+    .popup {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      background-color: #B5DC78;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+      z-index: 9999; /* Ensure it\'s on top of other content */
+      width: 300px; /* Set width of the popup */
+    }
+
+    .popup.show {
+      display: block; /* Show when .show class is added */
+    }
+    </style>
+
+    <script>
+    // Function to show the popup
+    function showPopup(message) {
+      var popup = document.getElementById("global-popup");
+      if (!popup) {
+        // Inject the popup into the top-level body element if it doesn\'t exist
+        popup = document.createElement("div");
+        popup.id = "global-popup";
+        popup.className = "popup";
+        document.body.appendChild(popup);
+      }
+      popup.innerHTML = message;
+      popup.classList.add("show");
+
+      // Automatically hide the popup after 10 seconds (10000 milliseconds)
+      setTimeout(function(){
+        popup.classList.remove("show");
+      }, 600000); // Adjust the time interval as needed
+    }
+
+    // Call the function to show the popup immediately with the provided message
+    showPopup("', popup_text, '");
+    </script>
+    ')
+
+    # Display the HTML in the notebook
+    IRdisplay::display_html(html_code)
+}
