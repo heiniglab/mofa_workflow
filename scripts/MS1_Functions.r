@@ -263,3 +263,56 @@ popup_function_info <- function(popup_text) {
 }
 
 
+
+popup_function_neg <- function(popup_text) {
+    # Define the HTML, CSS, and JavaScript for the popup
+    html_code <- paste0('
+    <style>
+    .popup {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      background-color: #DB2626;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+      z-index: 9999; /* Ensure it\'s on top of other content */
+      width: 300px; /* Set width of the popup */
+    }
+
+    .popup.show {
+      display: block; /* Show when .show class is added */
+    }
+    </style>
+
+    <script>
+    // Function to show the popup
+    function showPopup(message) {
+      var popup = document.getElementById("global-popup");
+      if (!popup) {
+        // Inject the popup into the top-level body element if it doesn\'t exist
+        popup = document.createElement("div");
+        popup.id = "global-popup";
+        popup.className = "popup";
+        document.body.appendChild(popup);
+      }
+      popup.innerHTML = message;
+      popup.classList.add("show");
+
+      // Automatically hide the popup after 10 seconds (10000 milliseconds)
+      setTimeout(function(){
+        popup.classList.remove("show");
+      }, 10000); // Adjust the time interval as needed
+    }
+
+    // Call the function to show the popup immediately with the provided message
+    showPopup("', popup_text, '");
+    </script>
+    ')
+
+    # Display the HTML in the notebook
+    IRdisplay::display_html(html_code)
+}
+

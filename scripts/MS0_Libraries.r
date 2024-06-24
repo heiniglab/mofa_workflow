@@ -7,7 +7,8 @@ print(path_to_conda_env)
 ### Libraries for all the project scripts
 library(Seurat, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)
 library(SeuratData, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)
-#library(SeuratDisk, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)  # conversion hd5f to seurat file
+#library(SeuratDisk, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)
+#library(anndata, quietly = TRUE, verbose = FALSE, lib.loc = path_to_conda_env)  # conversion hd5f to seurat file
 
 
 library(data.table, lib.loc = path_to_conda_env)
